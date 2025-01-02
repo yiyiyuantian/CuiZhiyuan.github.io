@@ -21,7 +21,7 @@ repository               : "yiyiyuantian/CuiZhiyuan.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.JPG"
+  avatar           : "profile.jpg"
   name             : "崔之元<br>Cui Zhiyuan"
   pronouns         : # example: "she/her"  
   bio              : "清华大学公共管理学院教授"
