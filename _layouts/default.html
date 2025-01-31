@@ -1,31 +1,60 @@
----
-layout: compress
----
+<body>
 
-{% include base_path %}
+  {% include browser-upgrade.html %}
+  {% include masthead.html %}
 
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
+  <!-- 新增的板块布局 -->
+  <div class="container">
+    <div class="row">
+      <!-- 个人简历 -->
+      <div class="col">
+        <a href="/resume/">
+          <div class="block">
+            <h3>个人简历</h3>
+            <img src="images/resume.jpg" alt="个人简历">
+          </div>
+        </a>
+      </div>
+      <!-- 讲座 -->
+      <div class="col">
+        <a href="/talks/">
+          <div class="block">
+            <h3>讲座</h3>
+            <img src="images/talks.jpg" alt="讲座">
+          </div>
+        </a>
+      </div>
+      <!-- 课程 -->
+      <div class="col">
+        <a href="/teaching/">
+          <div class="block">
+            <h3>课程</h3>
+            <img src="images/teaching.jpg" alt="课程">
+          </div>
+        </a>
+      </div>
+      <!-- 著作与论文 -->
+      <div class="col">
+        <a href="/publications/">
+          <div class="block">
+            <h3>著作与论文</h3>
+            <img src="images/publications.jpg" alt="著作与论文">
+          </div>
+        </a>
+      </div>
     </div>
+  </div>
 
-    {% include scripts.html %}
+  <!-- 页面内容 -->
+  {{ content }}
 
-  </body>
-</html>
+  <div class="page__footer">
+    <footer>
+      {% include footer/custom.html %}
+      {% include footer.html %}
+    </footer>
+  </div>
+
+  {% include scripts.html %}
+
+</body>
