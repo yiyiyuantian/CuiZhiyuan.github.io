@@ -8,13 +8,13 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "崔之元 Cui Zhiyuan"
+title                    : "崔之元的个人主页"
 title_separator          : "-"
 name                     : &name "崔之元"
-description              : &description "清华大学公共管理学院教授"
-url                      : https://github.com/yiyiyuantian/CuiZhiyuan.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+description              : &description "技术哲学与人工智能研究学者"
+url                      : "https://yiyiyuantian.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "yiyiyuantian/CuiZhiyuan.github.io"
+repository               : "yiyiyuantian.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -22,13 +22,13 @@ repository               : "yiyiyuantian/CuiZhiyuan.github.io"
 author:
   # Biographic information
   avatar           : "profile.jpg"
-  name             : "崔之元<br>Cui Zhiyuan"
+  name             : "崔之元"
   pronouns         : # example: "she/her"  
-  bio              : "清华大学公共管理学院教授"
-  location         : "北京"
+  bio              : "技术哲学与人工智能研究学者"
+  location         : "中国"
   employer         : "清华大学"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "your.email@example.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -291,8 +291,8 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
+paginate: 5
+paginate_path: /page:num/
 timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
@@ -350,3 +350,7 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Theme Settings
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "default"
